@@ -1,15 +1,19 @@
 const main = function () {
-    const businessListElement = document.querySelector("#gameList");
-  
-    businessListElement.innerHTML = "";
-    games.forEach(function (business) {
-      const { title, desc } = business;
-      const businessElement = document.createElement("div");  
-      businessElement.setAttribute("class", "grid-item hoverFocus");
-      businessElement.innerHTML = `
-              <p>${title}</p>`;
-  
-      businessListElement.appendChild(businessElement);
+    const gameListElement = document.querySelector("#gameList");
+
+    gameListElement.innerHTML = "";
+    games.forEach(function (game) {
+        const {
+            title,
+            desc
+        } = game;
+        const gameElement = document.createElement("div");
+        gameElement.setAttribute("class", "grid-item hoverFocus");
+        gameElement.innerHTML = `
+              <p>${title}</p>
+              <p>${desc}</p>
+              `;
+
+        gameListElement.appendChild(gameElement);
     });
-  };
-  
+};
