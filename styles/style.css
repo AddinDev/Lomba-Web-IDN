@@ -67,18 +67,22 @@ section {
 }
 
 .grid {
-	padding: 10px;
+	padding: 8px;
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-	grid-gap: 5px;
-  }
+	grid-gap: 10px;
+}
 
 .grid-item {
 	font-size: 1em;
-	padding: .3em;
+	padding: 1em;
 	color: black;
 	background: white;
 	text-align: center;
+	background-repeat: no-repeat;
+	/* background-attachment: fixed; */
+	background-size: cover;
+	border-radius: 5px;
 }
 
 nav a {
@@ -117,12 +121,12 @@ footer {
 	-o-transform: scale(1.03);
 	-ms-transform: scale(1.03);
 	transition: 0.5s;
-  }
-  
-  .hoverFocus {
-	  -webkit-transform: scale(1.0);
-	  -moz-transform: scale(1.0);
-	  -o-transform: scale(1.0);
-	  -ms-transform: scale(1.0);
-	  transition: 0.5s;
-  }
+}
+
+.hoverFocus {
+	-webkit-transform: scale(1.0);
+	-moz-transform: scale(1.0);
+	-o-transform: scale(1.0);
+	-ms-transform: scale(1.0);
+	transition: 0.5s;
+}

@@ -5,15 +5,14 @@ const main = function () {
     games.forEach(function (game) {
         const {
             title,
-            desc
+            desc,
+            image
         } = game;
         const gameElement = document.createElement("div");
-        gameElement.setAttribute("class", "grid-item hoverFocus");
-        gameElement.innerHTML = `
+        gameElement.innerHTML = `<div class="grid-item hoverFocus" style="background-image: url(${image})">
               <p>${title}</p>
               <p>${desc}</p>
-              `;
-
+              </div>`;
         gameListElement.appendChild(gameElement);
     });
 };
